@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+@import url('fonts/all.min.css');
+/*A partir de acá todo es el Navbar**********************************************************************/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-image: url("img/Fondodepantalla.jpg");
+}
+
+.header{
+    background-color: #1b3039;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+    
+
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 100px;
+    width: auto;
+    transition: all 0.3s;
+    border-radius: 50%;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;    
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;    
+}
+
+.header .nav-links li a:hover{
+    color: #ffbc0e;
+}
+
+.btn{
+    display: inline-block;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #e7e24d;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0.s;
+}
+
+.btn:hover{
+    background-color: #e2f1f8;
+    color: #ffbc0e;
+    transform: scale(1.2);
+}
+/* Acá termina todo lo que es el Navbar y sigo con el FOOTER  ****************************************************************/
+
+/*Footer*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+}
+footer{
+    background: #343434;
+    padding-top: 50px;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+    width: 33.3%;
+}
+h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.footer-content p{
+    width:190px;
+    margin: auto;
+    padding: 7px;
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+    margin-bottom: 20px; 
+}
+.footer-content p {
+    width: 190px; 
+    margin: auto; 
+    padding: 7px; 
+    text-align: center; 
+  }
+.footer-content ul{
+    text-align: center;
+}
+.list{
+    padding: 0;
+}
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type:none;
+    padding: 7px;
+    position: relative;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #f18930;
+    transition-duration: .5s;
+}
+.list li:hover::before{
+    width: 70px;
+}
+.social-icons{
+    text-align: center;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+}
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.social-icons i{
+    color: white;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #824a19;
+}
+.social-icons i:hover{
+    color: #90490a;
+}
+.bottom-bar{
+    background: #000008;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-bar p{
+    color: #867d7d;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
+/* Pruebas */
+
+.footer{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 50px; 
+  
+}
+
+
+/* Acá termina todo lo que es el Footer y sigo con la estructura del HOME  ****************************************/
+.quees {
+    display:inline-flexbox; 
+    flex-direction: row; 
+    justify-content: center; 
+    margin-top: 35px;
+    padding: 35px;
+  }
+.imagen-y-titulo {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-bottom: 20px;
+  }
+  h1, h2 {
+    font-size: x-large; 
+  }
+  
+.violet-text {
+    color: rgb(251, 251, 251);
+    width: 50%; 
+    float: left; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+    
+  }
+.img-1{
+    width: 25%;
+    height: auto;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px;
+    background-color: #fff;
+}
+.img-2{
+    width: 200px;
+    height: 300px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px;
+    background-color: #fff;
+}
+.half-width-left {
+    width: 50%; 
+    float: left;
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+  }
+  
+  h2 {
+    margin-top: 0; 
+    margin-bottom: 20px; /* Margen inferior */
+  }
+  
+  ul {
+    list-style: none; 
+    padding: 0; 
+  }
+  
+  li {
+    margin-bottom: 20px; 
+  }
+  
+  h4 {
+    margin-top: 0; 
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin: 0; 
+  }
+
+  /* ********************************************Estilos de CONTACTO ***************************************************************/
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    margin: auto;
+    padding: 100px;
+  }
+  .campoForm {
+      color: #112012;
+  }
+  
+  #submit {
+    font-size: 14px;
+    font-family: arial;
+    background-color: #054205;
+    }
+    
+  .error {
+    color: rgb(251, 255, 0);
+    font-weight: bold;
+    }
+
+
+/* Para pantallas pequeñas (móviles): */
+@media (max-width: 768px) {
+    .quees {
+      flex-direction: column; /* Apilar elementos verticalmente */
+    }
+    .imagen-y-titulo {
+      width: 100%; /* Ocupar todo el ancho */
+      text-align: center; /* Centrar texto */
+    }
+    .img-1, .img-2 {
+      width: 100%; /* Imágenes a pantalla completa */
+    }
+    .half-width-left {
+      width: auto; /* Eliminar ancho fijo */
+      padding: 0; /* Eliminar paddings */
+    }
+  }
+  
+  /* Para pantallas medianas (tablets): */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    /* Ajustes específicos para tablets */
+  }
+  
+  /* Para pantallas grandes (escritorio): */
+  @media (min-width: 1024px) {
+    /* Ajustes específicos para pantallas grandes */
+  }
+/********************************************* Parte de Personajes.html ******************************************** */
+/* margenes*/
+
+
+.body-mili{
+    background-image: url("img/Fondodepantalla.jpg");
+}
+
+
+/* Titulos */
+
+
+
+.h2-mili {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4rem;
+    color: #BFDE42;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.h3-mili {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    color: #42b4ca;
+    margin-bottom: 1%;
+    margin-top: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+/*Cards*/
+
+/*Base*/
+
+.container-mili {
+    display: flex;
+    background-color: #BFDE42 ;
+    border: 2px solid #BFDE42;
+    border-radius: 16px;
+    box-shadow: 2px 2px 4px 0 rgba(20, 20, 20, 0.3);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+  
+
+/*Textos*/
+
+.p-mili {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-size: 1rem;
+    color: #193840;
+    margin-right: 2%;
+    margin-top: 2%;
+
+}
+
+/*Imagenes*/
+
+.img-mili{
+    max-width: 12%;
+    height: 12%;
+    border-radius: 8%;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    border: 2px solid #455b61;
+    box-shadow: 2px 2px 4px 0 rgba(20, 20, 20, 0.3);
+}
+
+
+
+
+
+/* Media Query para pantallas más medias */
+
+@media screen and (max-width: 1000px) {
+
+
+    .img-mili {
+        align-self: center; 
+        max-width: 24%;
+        height: 24%;
+    }
+
+    .p-mili {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        font-size: 0.7rem;
+        color: #193840;
+        margin-right: 10%;
+        margin-top: 2%;
+        margin-left: 10%;
+    }
+}
+
+
+
+/* Media Query para pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+
+    .container-mili {
+        flex-direction: column; /* Cambia la dirección del flujo de columnas a filas */
+    }
+
+    .img-mili {
+        align-self: left; 
+        max-width: 24%;
+        height: 24%;
+    }
+
+    .p-mili {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        font-size: 0.7rem;
+        color: #193840;
+        margin-right: 10%;
+        margin-top: 2%;
+        margin-left: 10%;
+    }
+}
+/* -------------------------------------------------------------- COOOMIIEEENZAAAA  TOP CAPITULOS ---------------------------------------------------------------   */
+.Link {
+    margin-top: 10px;
+    text-align: center; /* Center the link text */
+    font-size: 50px;
+  }
+  .content-wrapper {
+    display: flex; /* Enable flexbox for the content wrapper */
+    flex-direction: column; /* Arrange items vertically by default */
+  }
+  .container-cap {
+    display: flex;
+    background-color: #BFDE42 ;
+    border: 2px solid #BFDE42;
+    border-radius: 16px;
+    box-shadow: 2px 2px 4px 0 rgba(20, 20, 20, 0.3);
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex; /* Activa Flexbox para el contenedor */
+    flex-direction: column; /* Disposición en columna por defecto */
+    align-items: center; /* Alineación horizontal centrada */
+}
+.p-ale{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-size: 1.1rem;
+    color: #193840;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+.img-C-2{
+    max-width: 32%;
+    height: 32%;
+    border-radius: 8%;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    border: 2px solid #455b61;
+    box-shadow: 2px 2px 4px 0 rgba(20, 20, 20, 0.3);
+}

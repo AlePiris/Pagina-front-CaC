@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="../img/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="../img/logo.jpg" alt="Rick and Morty">
+        </div>
+        <nav>
+           <ul class="nav-links">
+            <li><a href="Personajes.html">Personajes</a></li>
+            <li><a href="Topcaps.html">Top Capitulos</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="contacto.html">Contactenos</a></li>
+           </ul>            
+        </nav>
+    </header>
+
+
+<!-- Formulario de contacto -->
+
+    <div>
+    <br>
+    
+      <h1 style="font-size:x-large; text-align:center;">CONTACTO</h1>
+ 
+          <form novalidate action="#" method="post" onsubmit="return validaForm()">
+                <label for="nombre">Nombre</label>
+                <input class="campoForm" type="text" id="nombre" name="nombre" placeholder=" # Ingrese su nombre">
+                <div id="error-nombre" class="error"></div>
+                <br>
+
+                <label for="mail">E-mail</label>
+                <input class="campoForm" type="email" id="mail" name="mail" placeholder=" # Ingrese su e-mail">
+                <div id="error-mail" class="error"></div>
+                <br>              
+
+                <label for="paises">País</label>
+                <select class="campoForm" name="country" id="paises">
+                    <optgroup class="campoForm" label="Mercosur">
+                        <option class="campoForm" value="Argentina" selected>Argentina</option>
+                        <option class="campoForm" value="Brasil">Brasil</option>
+                        <option class="campoForm" value="Uruguay">Uruguay</option>
+                        <option class="campoForm" value="Paraguay">Paraguay</option>
+                    </optgroup>
+                    <optgroup class="campoForm" label="Extra Mercosur">
+                        <option class="campoForm" value="Perú">Perú</option>
+                        <option class="campoForm" value="Chile">Chile</option>
+                        <option class="campoForm" value="Ecuador">Ecuador</option>
+                        <option class="campoForm" value="Colombia">Colombia</option>
+                    </optgroup>
+                </select>
+                <br>
+                <label for="consulta">Consulta</label>
+                <textarea class="campoForm" id="consulta" name="consulta" rows="10" cols="60"> # Escribe tu consulta…</textarea>
+                <div id="error-consulta" class="error"></div><br>
+
+                <label for="terminos"></label>
+                <a href="#" onclick="mostrarTerminos()"> # Acepto los Términos y Condiciones</a>
+                <input class="campoForm" type="checkbox" id="terminos" name="terminos">
+                <div id="error-terminos" class="error"></div>
+                <br>  
+
+                <div># Campos Obligatorios</div>
+                <br>       
+                <button id="submit" type="submit"><strong>Enviar</strong></button>
+            </form>
+    </div>
+
+
+
+<!--empieza el footer abajo  -->
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="contacto.html">Contact</a></li>
+                    <li><a href="Topcaps.html">Top Capitulos</a></li>
+                    <li><a href="Personajes.html">Personajes</a></li>
+                 </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                 <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                 <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                 <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2023 your company . All rights reserved</p>
+        </div>
+    </footer>
+
+        
+    <script src="validation.js"></script>
+
+</body>
+</html>
